@@ -4,6 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>地野省力車 TerraAssist — 電動推力輔助搬運車</title>
+<meta name="description" content="地野省力車 TerraAssist：一款電動推力輔助的多用途搬運車。不改變操作習慣，提供穩定持續的推進動力，讓搬運不再是體力的硬仗。適用農地、工地、市集等戶外場域。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="地野省力車 TerraAssist — 電動推力輔助搬運車">
+<meta property="og:description" content="不改變操作習慣，只在你最需要的時候提供穩定推進動力——讓搬運不再是體力的硬仗。">
+<meta property="og:image" content="https://makeitgood626.github.io/diye/og.jpg">
+<meta property="og:url" content="https://makeitgood626.github.io/diye/">
+<meta property="og:site_name" content="地野省力車 TerraAssist">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="地野省力車 TerraAssist — 電動推力輔助搬運車">
+<meta name="twitter:description" content="電動推力輔助的多用途搬運車，讓搬運不再是體力的硬仗。">
+<meta name="twitter:image" content="https://makeitgood626.github.io/diye/og.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -144,6 +155,19 @@
   .refs .r{display:flex;gap:14px;padding:13px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--ink-soft)}
   .refs .r::before{counter-increment:r;content:counter(r);font-family:"Baloo 2";font-weight:700;color:var(--green);min-width:20px}
   @media(max-width:880px){.swot{grid-template-columns:1fr;gap:24px}}
+  .faq{max-width:880px}
+  .faq details{border-bottom:1px solid var(--line)}
+  .faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 2px;font-size:18px;font-weight:700}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary i{color:var(--green);font-size:24px;line-height:1;transition:transform .2s;font-family:"Baloo 2"}
+  .faq details[open] summary i{transform:rotate(45deg)}
+  .faq p{padding:0 2px 22px;color:var(--ink-soft);max-width:780px}
+  .cta{text-align:center;background:var(--soft);border-radius:var(--radius);padding:clamp(40px,6vw,76px) 28px}
+  .cta h2{font-size:clamp(28px,4.6vw,46px);font-weight:700;line-height:1.12}
+  .cta p{color:var(--ink-soft);margin:14px 0 26px;font-size:17px}
+  .cta .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .cta .mail{display:block;margin-top:20px;color:var(--muted);font-size:14px}
+  .cta .mail a{color:var(--green);font-weight:600}
   .reveal{opacity:0;transform:translateY(30px);transition:.8s cubic-bezier(.2,.7,.2,1)}
   .reveal.in{opacity:1;transform:none}
 
@@ -182,7 +206,7 @@
       <p class="tag">不改變你習慣的操作方式，只在你最需要的時候，提供穩定持續的推進動力——讓搬運，不再是體力的硬仗。</p>
       <div class="keyfeat">核心特色 <b class="baloo">電動推力輔助</b></div>
       <div class="hero-actions">
-        <a href="#features" class="pill solid">探索特色</a>
+        <a href="#contact" class="pill solid">預約試用</a>
         <a href="#video" class="pill">看使用示範 ›</a>
       </div>
       <div class="tags">
@@ -215,13 +239,13 @@
   </div>
 </section>
 
-<section class="block" id="research" style="padding-top:0">
+<section class="block" id="why" style="padding-top:0">
   <div class="wrap">
-    <div class="head reveal"><span class="eyebrow">Research</span><h2 class="sec-title baloo">研究依據</h2>
-      <p class="lead-p" style="margin-top:14px">人機工程與人機互動研究指出，電動輔助能有效降低搬運時的肌肉負荷，而「人機協作」比全自動更貼近實際工作需求：</p></div>
+    <div class="head reveal"><span class="eyebrow">Why It Works</span><h2 class="sec-title baloo">為什麼<i>有效</i></h2>
+      <p class="lead-p" style="margin-top:14px">「電動輔助 × 人機協作」不是噱頭，而是有人機工程依據的省力方式：</p></div>
     <div class="reveal">
-      <div class="cite"><b>Chen et al. (2018)</b><br><span>整合電動驅動系統的倉儲搬運車，能依使用者施力自動調整輔助扭力，在長距離搬運中穩定減少肩部與腰部的肌肉活動強度，改善整體作業疲勞。</span></div>
-      <div class="cite"><b>Lam &amp; Lee (2020)</b><br><span>比較多種電動搬運設備後指出，「人機協作」設計相較於全自動系統，更能在保持操作直覺性的同時，降低職業訓練成本與設備學習門檻。</span></div>
+      <div class="cite"><b>更少的身體負擔</b><br><span>研究證實，電動輔助能依使用者施力自動調整，在長距離搬運中顯著降低肩部與腰部的肌肉負荷，減少作業疲勞與職業傷害風險。</span></div>
+      <div class="cite"><b>更貼近實務的設計</b><br><span>「人機協作」相較於全自動系統，更能在保持直覺操作的同時，降低訓練成本與學習門檻——這正是地野省力車的核心取向。</span></div>
     </div>
   </div>
 </section>
@@ -285,14 +309,20 @@
   </div>
 </section>
 
-<section class="block" id="swot" style="padding-top:0">
+<section class="block" id="faq" style="padding-top:0">
   <div class="wrap">
-    <div class="head reveal"><span class="eyebrow">SWOT</span><h2 class="sec-title baloo">SWOT 分析</h2></div>
-    <div class="swot reveal">
-      <div class="q"><h3>優勢<span class="en">STRENGTHS</span></h3><p>馬達推力輔助、操作直覺、上手快；有效減輕搬運體力負擔，提升作業效率。</p></div>
-      <div class="q w"><h3>劣勢<span class="en">WEAKNESSES</span></h3><p>功能單一，缺少模式切換或智能控制；仍需人力操作，動力有限。</p></div>
-      <div class="q o"><h3>機會<span class="en">OPPORTUNITIES</span></h3><p>中小型工作場域省力需求增加；市場上缺乏簡單、好上手的電動輔助推車。</p></div>
-      <div class="q t"><h3>威脅<span class="en">THREATS</span></h3><p>低價傳統推車的競爭；使用者對電池續航與維護成本的顧慮。</p></div>
+    <div class="head reveal"><span class="eyebrow">FAQ</span><h2 class="sec-title baloo">常見問題</h2></div>
+    <div class="faq reveal">
+      <details open><summary>地野省力車和一般推車差在哪？<i>+</i></summary>
+        <p>在你熟悉的推車結構上整合電動馬達，於推行時提供穩定、持續的推力輔助——一樣的操作方式，卻能明顯省力。</p></details>
+      <details><summary>需要學習或設定嗎？<i>+</i></summary>
+        <p>不用。完整保留傳統推車的握把與操作方式，拿了就能推，免訓練、免看說明書。</p></details>
+      <details><summary>適合哪些場域使用？<i>+</i></summary>
+        <p>農地、工地、市集等需要長時間、重載、且地面不平整的戶外搬運情境。</p></details>
+      <details><summary>維護會不會很麻煩？<i>+</i></summary>
+        <p>結構單純、沒有複雜模式或感測系統，維護門檻與成本都低，適合長期使用。</p></details>
+      <details><summary>現在可以買到嗎？<i>+</i></summary>
+        <p>目前為原型驗證階段，歡迎預約試用、洽詢合作或索取進一步資訊。</p></details>
     </div>
   </div>
 </section>
@@ -325,23 +355,26 @@
   </div>
 </section>
 
-<section class="block" id="refs" style="padding-top:0">
-  <div class="wrap">
-    <div class="head reveal"><span class="eyebrow">References</span><h2 class="sec-title baloo">參考文獻</h2></div>
-    <div class="refs reveal">
-      <div class="r">Jung, M.-C., Haight, J. M., &amp; Freivalds, A. (2005). Pushing and Pulling Carts and Two-Wheeled Hand Trucks. International Journal of Industrial Ergonomics, 35(1), 79–89.</div>
-      <div class="r">Wan, X., Ma, J., Zhang, Y., Endo, T., &amp; Matsuno, F. (2021). A Power-Assisted Cart with the Optimal Assistance Ratio and Disturbance Observer-Based Methods for Walking Assistance Applications. Applied Sciences, 11(3), 1079.</div>
-      <div class="r">Hsu, D. Y. (2025). Biomechanical Evaluation of Nursing Cart Handles Using Electromyography. Scientific Reports.</div>
-    </div>
-  </div>
-</section>
-
-<section class="block" id="team" style="padding-bottom:0">
+<section class="block" id="team">
   <div class="wrap">
     <div class="team reveal">
       <span class="eyebrow">The Team · 第四組</span>
       <div class="names baloo">徐意軒　·　李曉昀　·　黃楷軒<br>蘇芷璉　·　張博硯</div>
       <p style="color:var(--muted);margin-top:10px">國立臺北商業大學・創意科技與產品設計系</p>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta reveal">
+      <h2 class="baloo">想讓搬運，<i style="color:var(--green)">真正省力</i>？</h2>
+      <p>歡迎預約試用、洽詢合作或索取更多資訊，我們很樂意與你聊聊。</p>
+      <div class="btns">
+        <a href="mailto:justintsai1067@gmail.com?subject=地野省力車%20預約試用" class="pill solid">預約試用</a>
+        <a href="mailto:justintsai1067@gmail.com?subject=地野省力車%20合作洽詢" class="pill">聯絡團隊</a>
+      </div>
+      <span class="mail">或直接來信：<a href="mailto:justintsai1067@gmail.com">justintsai1067@gmail.com</a></span>
     </div>
   </div>
 </section>
