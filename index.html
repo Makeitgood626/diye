@@ -52,7 +52,7 @@
   .hero-vis{position:relative;display:flex;align-items:center;justify-content:center}
   .hero-vis::before{content:"";position:absolute;width:86%;height:52%;bottom:9%;
     background:radial-gradient(closest-side, rgba(127,181,59,.22), rgba(127,181,59,0) 72%);filter:blur(8px)}
-  .hero-vis img{position:relative;width:100%;max-width:560px;animation:float 6.5s ease-in-out infinite;
+  .hero-vis img{position:relative;width:100%;max-width:620px;animation:float 6.5s ease-in-out infinite;
     filter:drop-shadow(0 30px 36px rgba(60,60,40,.28))}
   @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
   .hero-copy .eyebrow{display:block;margin-bottom:14px}
@@ -63,6 +63,12 @@
   .hero-copy .keyfeat{margin:24px 0;font-size:14px;letter-spacing:.06em;color:var(--muted)}
   .hero-copy .keyfeat b{font-family:"Baloo 2";font-weight:700;font-size:26px;color:var(--green);letter-spacing:0;margin-left:6px;vertical-align:-3px}
   .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+  .tags{margin-top:24px;display:flex;gap:9px;flex-wrap:wrap}
+  .tags span{padding:7px 15px;border-radius:999px;font-size:13px;font-weight:600;background:var(--soft);color:var(--ink-soft)}
+  .herohi{position:absolute;left:0;right:0;bottom:28px}
+  .herohi .in{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;border-top:1px solid var(--line);padding-top:22px}
+  .herohi .h b{display:block;font-family:"Baloo 2";font-weight:700;font-size:17px;color:var(--ink);margin-bottom:2px}
+  .herohi .h span{font-size:13px;color:var(--muted)}
 
   .herobar{position:absolute;left:0;right:0;bottom:24px}
   .herobar .in{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
@@ -147,7 +153,8 @@
     .hero-vis{order:-1}
     .personas,.gallery{grid-template-columns:1fr}
     .feat .row{grid-template-columns:70px 1fr}.feat .num{font-size:40px}
-    .herobar{position:static;margin-top:30px}
+    .herohi{position:static;margin-top:30px}
+    .herohi .in{grid-template-columns:1fr 1fr;gap:16px}
     .brand img{height:52px}
   }
 </style>
@@ -178,6 +185,17 @@
         <a href="#features" class="pill solid">探索特色</a>
         <a href="#video" class="pill">看使用示範 ›</a>
       </div>
+      <div class="tags">
+        <span>農地</span><span>工地</span><span>市集</span><span>戶外作業</span><span>不平整地面</span>
+      </div>
+    </div>
+  </div>
+  <div class="wrap herohi">
+    <div class="in">
+      <div class="h"><b>電動推力輔助</b><span>馬達持續穩定推進</span></div>
+      <div class="h"><b>免訓練上手</b><span>保留傳統推車操作</span></div>
+      <div class="h"><b>簡單耐用</b><span>低維護、好保養</span></div>
+      <div class="h"><b>多場域適用</b><span>不平整地面也穩定</span></div>
     </div>
   </div>
 </section>
