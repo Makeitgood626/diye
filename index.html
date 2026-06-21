@@ -126,6 +126,18 @@
   footer .big i{color:var(--green)}
   footer p{color:var(--muted);margin-top:14px}
 
+  .cite{border-left:3px solid var(--green);padding:4px 0 4px 18px;margin-bottom:20px;max-width:860px}
+  .cite b{font-weight:700;color:var(--ink)} .cite span{color:var(--ink-soft)}
+  .swot{display:grid;grid-template-columns:1fr 1fr;gap:30px 44px}
+  .swot .q{border-top:3px solid var(--green);padding-top:16px}
+  .swot .q.w{border-color:#c0a23a} .swot .q.o{border-color:var(--blue)} .swot .q.t{border-color:#b06a4a}
+  .swot .q h3{font-size:19px;font-weight:700;margin-bottom:8px}
+  .swot .q .en{font-family:"Baloo 2";font-size:12px;letter-spacing:.12em;color:var(--muted);margin-left:8px;font-weight:600}
+  .swot .q p{color:var(--ink-soft);font-size:15px}
+  .refs{counter-reset:r;max-width:900px}
+  .refs .r{display:flex;gap:14px;padding:13px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--ink-soft)}
+  .refs .r::before{counter-increment:r;content:counter(r);font-family:"Baloo 2";font-weight:700;color:var(--green);min-width:20px}
+  @media(max-width:880px){.swot{grid-template-columns:1fr;gap:24px}}
   .reveal{opacity:0;transform:translateY(30px);transition:.8s cubic-bezier(.2,.7,.2,1)}
   .reveal.in{opacity:1;transform:none}
 
@@ -178,8 +190,20 @@
         <span class="eyebrow" style="display:block;margin-bottom:14px">About</span>
         <h2 class="sec-title baloo">搬得越重，<i>傷得越深</i>。</h2>
         <p class="lead-p" style="margin-top:18px">在農業、工地與市集，推車仍高度依賴人力。當載重增加、地面不佳、長時間反覆搬運時，使用者需要持續施加大量推力，導致體力快速消耗，甚至造成腰部、肩膀與手腕的職業傷害。市面上的電動／自走式設備又多半昂貴、笨重、操作複雜。我們選擇回到核心需求——<b>「推得動、推得久」</b>，用最單純的方式解決最實際的問題。</p>
+        <p class="lead-p" style="margin-top:16px">長期以來，推車的操作方式幾乎沒有改變，仍高度依賴人力。本專題以<b>「功能單一化」</b>為出發點，不追求多段模式或智能控制，而是把資源集中在最核心的需求——提供穩定且持續的推進動力，協助使用者降低推動重物時的體力消耗，並提升整體搬運效率。</p>
       </div>
       <div class="reveal"><img src="proto1.jpg" alt="地野省力車 實機原型"></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="research" style="padding-top:0">
+  <div class="wrap">
+    <div class="head reveal"><span class="eyebrow">Research</span><h2 class="sec-title baloo">研究依據</h2>
+      <p class="lead-p" style="margin-top:14px">人機工程與人機互動研究指出，電動輔助能有效降低搬運時的肌肉負荷，而「人機協作」比全自動更貼近實際工作需求：</p></div>
+    <div class="reveal">
+      <div class="cite"><b>Chen et al. (2018)</b><br><span>整合電動驅動系統的倉儲搬運車，能依使用者施力自動調整輔助扭力，在長距離搬運中穩定減少肩部與腰部的肌肉活動強度，改善整體作業疲勞。</span></div>
+      <div class="cite"><b>Lam &amp; Lee (2020)</b><br><span>比較多種電動搬運設備後指出，「人機協作」設計相較於全自動系統，更能在保持操作直覺性的同時，降低職業訓練成本與設備學習門檻。</span></div>
     </div>
   </div>
 </section>
@@ -243,6 +267,18 @@
   </div>
 </section>
 
+<section class="block" id="swot" style="padding-top:0">
+  <div class="wrap">
+    <div class="head reveal"><span class="eyebrow">SWOT</span><h2 class="sec-title baloo">SWOT 分析</h2></div>
+    <div class="swot reveal">
+      <div class="q"><h3>優勢<span class="en">STRENGTHS</span></h3><p>馬達推力輔助、操作直覺、上手快；有效減輕搬運體力負擔，提升作業效率。</p></div>
+      <div class="q w"><h3>劣勢<span class="en">WEAKNESSES</span></h3><p>功能單一，缺少模式切換或智能控制；仍需人力操作，動力有限。</p></div>
+      <div class="q o"><h3>機會<span class="en">OPPORTUNITIES</span></h3><p>中小型工作場域省力需求增加；市場上缺乏簡單、好上手的電動輔助推車。</p></div>
+      <div class="q t"><h3>威脅<span class="en">THREATS</span></h3><p>低價傳統推車的競爭；使用者對電池續航與維護成本的顧慮。</p></div>
+    </div>
+  </div>
+</section>
+
 <section class="block" id="video" style="padding-top:0">
   <div class="wrap">
     <div class="head reveal"><span class="eyebrow">In Action</span><h2 class="sec-title baloo">使用示範</h2></div>
@@ -267,6 +303,17 @@
     <div class="gallery reveal">
       <img src="proto1.jpg" alt="地野省力車 實機原型">
       <img src="proto2.jpg" alt="地野省力車 實機原型側視">
+    </div>
+  </div>
+</section>
+
+<section class="block" id="refs" style="padding-top:0">
+  <div class="wrap">
+    <div class="head reveal"><span class="eyebrow">References</span><h2 class="sec-title baloo">參考文獻</h2></div>
+    <div class="refs reveal">
+      <div class="r">Jung, M.-C., Haight, J. M., &amp; Freivalds, A. (2005). Pushing and Pulling Carts and Two-Wheeled Hand Trucks. International Journal of Industrial Ergonomics, 35(1), 79–89.</div>
+      <div class="r">Wan, X., Ma, J., Zhang, Y., Endo, T., &amp; Matsuno, F. (2021). A Power-Assisted Cart with the Optimal Assistance Ratio and Disturbance Observer-Based Methods for Walking Assistance Applications. Applied Sciences, 11(3), 1079.</div>
+      <div class="r">Hsu, D. Y. (2025). Biomechanical Evaluation of Nursing Cart Handles Using Electromyography. Scientific Reports.</div>
     </div>
   </div>
 </section>
